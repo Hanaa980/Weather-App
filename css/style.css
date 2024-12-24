@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    width: 15%;
+}
+
+.logo-img {
+    width: 70px;
+
+    vertical-align: sub;
+}
+
+.text-s {
+    font-size: 13px;
+}
+
+.navbar-toggler {
+    border: 1px #fff solid;
+}
+
+.nav-pills {
+    flex-direction: column;
+}
+
+.nav-pills .nav-link {
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    text-align: start;
+}
+
+.nav-pills .nav-link.active {
+    color: #0b5ed7 !important;
+    border: 1px solid #0b5ed7;
+    border-radius: 20px;
+    background: transparent;
+}
+
+/* ----------------------------- */
+.hero-section {
+    height: 70vh;
+    background-size: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(./../imges/banner.png);
+}
+
+.in-search {
+    height: 65px;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.con-inputs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.find-btn {
+    position: absolute;
+    right: 13%;
+}
+
+/*----------------------------*/
+.weather-data {
+    background: #1e202b;
+}
+
+.bg-row,
+footer {
+    background: #323544;
+}
+
+.trans-y {
+    transform: translateY(-85px);
+}
+
+.forecast-header {
+    display: flex;
+    justify-content: space-between;
+    background: #2d303d;
+    padding: 10px;
+}
+
+.degree {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.num {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.img-con {
+    width: 90px;
+}
+
+.location {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.data-forecast,
+.tom-data-forecast,
+.after-data-forecast {
+    padding: 10px;
+    color: #1b8ed8;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    padding: 0 15px 15px;
+}
+
+/*---------------------*/
+.forecast-content-tom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.degree-tom {
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.subscribe-section {
+    padding: 10px 0;
+}
+
+.sus-btn {
+    position: absolute;
+    right: 10px;
+    width: 120px;
+    margin: 4px 0 0 0;
+}
+
+.social-links {
+    a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #1e202b;
+        color: #009ad8;
+        text-align: center;
+        line-height: 2;
+        transition: 0.3s;
+        font-size: 20px;
+
+        &:hover {
+            color: #fff;
+            background: #009ad8;
+        }
+    }
+}
+
+.border-between {
+    border-inline: 1px solid #000000ab;
+}

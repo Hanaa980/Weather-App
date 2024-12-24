@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./imges/logo@2x.png" class="logo-img" alt="logo">
+                <div class="logo-con d-inline-block text-white">
+                    <h1 class="fs-6 m-0">Weather</h1>
+                    <p class="text-s">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-white "></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-lg-end " id="navbarNavAltMarkup">
+
+                <ul class="nav nav-pills flex-lg-row  mb-3" id="pills-tab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-News-tab" data-bs-toggle="pill" data-bs-target="#pills-News"
+                            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">News</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Live-cameras-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Live-cameras" type="button" role="tab"
+                            aria-controls="pills-Live-cameras" aria-selected="false">Live cameras</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Photos-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Photos" type="button" role="tab" aria-controls="pills-Photos"
+                            aria-selected="false">Photos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Contacts-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Contacts" type="button" role="tab" aria-controls="pills-Contacts"
+                            aria-selected="false">Contacts</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section d-flex justify-content-center align-items-center">
+            <div class="con-inputs  position-relative">
+                <input id="search" type="text" name="searh-place" placeholder="Enter your city..."
+                    class="in-search px-5 bg-dark text-white placeholder-wave rounded-5 border-0 w-75">
+                <button id="find" class="find-btn btn btn-primary px-5 py-3 rounded-5">Find</button>
+            </div>
+        </section>
+        <section id="weaterData" class="weather-data ">
+            <div class="container-weather d-flex flex-column  flex-lg-row container-xxl ">
+                <div class="today bg-row trans-y forecast text-white  my-2  col-lg-4 ">
+                    <div class="forecast-header" id="today">
+                        <div class="day"></div>
+                        <div class=" date"></div>
+                    </div>
+                    <div class="forecast-content" id="current">
+                        <div class="location"></div>
+                        <div class="degree">
+                            <div class="num"><span class="temp"></span><sup>o</sup>C</div>
+
+                            <div class="img-con">
+                                <img id="iconForecast" src="" alt="icon" class="w-100">
+                            </div>
+
+                        </div>
+                        <div class="data-forecast"></div>
+                        <div class="icons">
+                            <div><img src="./imges/icon-umberella.png" alt="icon-umberella"> <span
+                                    class="humidity"></span></div>
+                            <div><img src="./imges/icon-wind.png" alt="icon-wind"> <span class="wind-kph"></span>
+                            </div>
+                            <div><img src="imges/icon-compass.png" alt="icon-compass" > <span class="wind-dir"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ~----------------------------------------- -->
+                <div class="bg-row trans-y forecast  my-2 col-lg-4 border-between">
+                    <div class="forecast-header">
+                        <div class="tomorrow text-white m-auto"></div>
+                    </div>
+                    <div class="forecast-content-tom">
+                        <div>
+                            <img id="tom-iconForecast" alt="" src="">
+                        </div>
+                        <div class="degree-tom">
+                            <div class="fs-5"><span class="tom-max-temp"></span> <sup>o</sup> C</div>
+                            <div class="fs-6"><span class="tom-min-temp"></span> <sup>o</sup></div>
+                        </div>
+                        <div class="tom-data-forecast"></div>
+                    </div>
+                </div>
+                <div class="bg-row trans-y forecast  my-2  col-lg-4 ">
+                    <div class="forecast-header">
+                        <div class="after-tomorrow text-white m-auto"></div>
+                    </div>
+                    <div class=" forecast-content-tom">
+                            <div>
+                                <img id="afterTomiconForecast" alt="" src="">
+                            </div>
+                            <div class="degree-tom">
+                                <div class="fs-5"><span class="after-max-temp"></span> <sup>o</sup>C</div>
+                                <div class="fs-6"><span class="after-min-temp"></span> <sup>o</sup>C</div>
+                            </div>
+                            <div class="after-data-forecast"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="py-5">
+        <div class="container-xxl">
+            <form class="subscribe-section  position-relative">
+                <input type="email" placeholder="Enter your email to subscribe..."
+                    class="bg-dark p-3 text-white  rounded-5 border-0 w-100">
+                <input class="btn btn-primary p-2 rounded-5 sus-btn " value="Subscribe" />
+            </form>
+            <div class="icon col-md-6">
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+                <p class="text-light m-0 py-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
